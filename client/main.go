@@ -29,8 +29,7 @@ func main() {
 	// 	log.Fatal(err)
 	// }
 
-	l.
-		err = l.UnauthenticatedBind("readonly")
+	l.err = l.UnauthenticatedBind("readonly")
 	if err != nil {
 		log.Fatal(err)
 	}

@@ -9,6 +9,10 @@ server:
 client:
     go run client/main.go
 
+# test against remote server
+remote *ARGS:
+    go run remote/main.go {{ARGS}}
+
 # glauth server
 glauth:
     glauth -c glauth.cfg
